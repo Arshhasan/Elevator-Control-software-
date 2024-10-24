@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lift Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .lift-btn-container input.active {
+            background-color: #e1e1e1;
+            color: #314960;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Lift Simulation</h1>
+    </div>
+
+    <div id="form-section">
+        <form id="form">
+            <div class="form-group">
+                <label id="label-lifts" for="lifts">Number of Lifts:</label>
+                <input type="number" id="lifts" name="lifts" min="1" required> 
+            </div>
+            <div class="form-group">
+                <label id="label-floors" for="floors">Number of Floors:</label>
+                <input type="number" id="floors" name="floors" min="1" required>
+            </div>
+            <button type="button" id="btn">Start Simulation</button> 
+        </form>
+    </div>
+
+    <div id="lift-floor-UI"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
